@@ -3,7 +3,7 @@ using System.Threading.Tasks;
 
 namespace ExplicitArchitecture
 {
-    /// <summary>
+    /// <summary> 
     /// A Service executes business logic for a use case.
     /// </summary>
     public interface IService<in TInDTO, TOutDTO>
