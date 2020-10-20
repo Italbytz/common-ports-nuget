@@ -32,11 +32,14 @@ namespace ExplicitArchitecture
         /// </summary>
         /// <param name="mapping">Mapping for the success value.</param>
         public Result<TDestination> Map<TDestination>(
-            MapDelegate<T, TDestination> mapping) => tag switch
+            MapDelegate<T, TDestination> mapping)
+        {
+            switch (tag)
             {
-                0 => new Result<TDestination>(mapping(Item1)),
-                1 => new Result<TDestination>(Item2),
-                _ => throw new InvalidOperationException(),
+                case 0: return new Result<TDestination>(mapping(Item1));
+                case 1: return new Result<TDestination>(Item2);
+                default: throw new InvalidOperationException();
             };
+        }
     }
 }
