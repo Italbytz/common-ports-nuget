@@ -1,13 +1,12 @@
 ﻿using System;
-using System.Collections.Generic;
 using System.Threading.Tasks;
 
-namespace ExplicitArchitecture
+namespace CommonPorts
 {
     /// <summary>
-    /// A generic repository.
+    /// A data sink (the CUD of a CRUD Repository).
     /// </summary>
-    public interface IRepository<TId, TEntity>
+    public interface IDataSink<TId, TEntity>
     {
         /// <summary>
         /// Create an entity.
@@ -15,19 +14,6 @@ namespace ExplicitArchitecture
         /// <param name="entity">The entity to create.</param>
         /// <returns>ID of the created entity.</returns>
         Task<Result<TId>> Create(TEntity entity);
-
-        /// <summary>
-        /// Retrieves an entity.
-        /// </summary>
-        /// <param name="id">ID of the entity to retrieve.</param>
-        /// <returns>An entity.</returns>
-        Task<Result<TEntity>> Retrieve(TId id);
-
-        /// <summary>
-        /// Retrieves all entities.
-        /// </summary>
-        /// <returns>All entities.</returns>
-        Task<Result<List<TEntity>>> RetrieveAll();
 
         /// <summary>
         /// Updates an entity.

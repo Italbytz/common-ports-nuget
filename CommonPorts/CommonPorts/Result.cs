@@ -1,7 +1,7 @@
 ﻿using System;
 using FunctionalSharp.DiscriminatedUnions;
 
-namespace ExplicitArchitecture
+namespace CommonPorts
 {
     public delegate TDestination MapDelegate<TSource, TDestination>(
         TSource source);
