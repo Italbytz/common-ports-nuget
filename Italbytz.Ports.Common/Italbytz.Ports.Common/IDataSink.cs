@@ -1,7 +1,7 @@
 ﻿using System;
 using System.Threading.Tasks;
 
-namespace CommonPorts
+namespace Italbytz.Ports.Common
 {
     /// <summary>
     /// A data sink (the CUD of a CRUD Repository).

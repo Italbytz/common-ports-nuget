@@ -2,12 +2,12 @@
 
   <PropertyGroup>
     <TargetFrameworks>netstandard2.0;netcoreapp3.1</TargetFrameworks>
-    <PackageVersion>0.2.0</PackageVersion>
+    <PackageVersion>0.2.1</PackageVersion>
     <Authors>Robin Nunkesser</Authors>
-    <PackageProjectUrl>https://github.com/Italbytz/common-ports-nuget</PackageProjectUrl>
+    <PackageProjectUrl>https://github.com/Italbytz/nuget-ports-common</PackageProjectUrl>
     <Description>A set of helpful interfaces to use with Ports and Adapters.</Description>
     <PackOnBuild>true</PackOnBuild>
-    <PackageLicenseUrl>https://github.com/Italbytz/common-ports-nuget/blob/main/LICENSE</PackageLicenseUrl>
+    <PackageLicenseUrl>https://github.com/Italbytz/nuget-ports-common/blob/main/LICENSE</PackageLicenseUrl>
   </PropertyGroup>
 
   <ItemGroup>

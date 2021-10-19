@@ -1,7 +1,7 @@
 ﻿using System;
 using System.Threading.Tasks;
 
-namespace CommonPorts
+namespace Italbytz.Ports.Common
 {
     /// <summary> 
     /// A Service executes business logic for a use case.

@@ -1,7 +1,7 @@
 ﻿using System;
 using FunctionalSharp.DiscriminatedUnions;
 
-namespace CommonPorts
+namespace Italbytz.Ports.Common
 {
     public delegate TDestination MapDelegate<TSource, TDestination>(
         TSource source);

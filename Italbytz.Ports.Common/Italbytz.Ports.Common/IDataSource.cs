@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using System.Threading.Tasks;
 
-namespace CommonPorts
+namespace Italbytz.Ports.Common
 {
     /// <summary>
     /// A data source (the R of a CRUD Repository).
