@@ -4,7 +4,7 @@ using System.Threading.Tasks;
 namespace Italbytz.Ports.Common
 {
     /// <summary> 
-    /// A Service executes business logic for a use case.
+    /// A Service asynchronously executes business logic for a use case.
     /// </summary>
     public interface IService<in TInDTO, TOutDTO>
     {
@@ -12,23 +12,17 @@ namespace Italbytz.Ports.Common
         /// Executes the use case.
         /// </summary>
         /// <param name="inDTO">Encapsulated inDTO parameters.</param>
-        /// <param name="successHandler">The action to use for a successful result.</param>
-        /// <param name="errorHandler">The action to use for an unsuccessful result.</param>
-        Task Execute(TInDTO inDTO, Action<TOutDTO> successHandler,
-            Action<Exception> errorHandler);
+        Task<TOutDTO> Execute(TInDTO inDTO);
     }
 
     /// <summary> 
-    /// A Service executes business logic for a use case.
+    /// A Service asynchronously executes business logic for a use case.
     /// </summary>
     public interface IService<TOutDTO>
     {
         /// <summary>
         /// Executes the use case.
         /// </summary>
-        /// <param name="successHandler">The action to use for a successful result.</param>
-        /// <param name="errorHandler">The action to use for an unsuccessful result.</param>
-        Task Execute(Action<TOutDTO> successHandler,
-            Action<Exception> errorHandler);
+        Task<TOutDTO> Execute();
     }
 }

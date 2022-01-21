@@ -13,7 +13,7 @@ namespace Italbytz.Ports.Common
         /// </summary>
         /// <param name="entity">The entity to create.</param>
         /// <returns>ID of the created entity.</returns>
-        Task<Result<TId>> Create(TEntity entity);
+        Task<TId> Create(TEntity entity);
 
         /// <summary>
         /// Updates an entity.
@@ -21,13 +21,13 @@ namespace Italbytz.Ports.Common
         /// <param name="id">ID of the entity to update.</param>
         /// <param name="entity">Updated entity.</param>
         /// <returns>Boolean indicating success or failure.</returns>
-        Task<Result<bool>> Update(TId id, TEntity entity);
+        Task<bool> Update(TId id, TEntity entity);
 
         /// <summary>
         /// Deletes an entity.
         /// </summary>
         /// <param name="id">ID of the entity to delete.</param>
         /// <returns>Boolean indicating success or failure.</returns>
-        Task<Result<bool>> Delete(TId id);
+        Task<bool> Delete(TId id);
     }
 }
