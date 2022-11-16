@@ -14,12 +14,12 @@ namespace Italbytz.Ports.Common
         /// </summary>
         /// <param name="id">ID of the entity to retrieve.</param>
         /// <returns>An entity.</returns>
-        Task<TEntity> Retrieve(TId id);
+        Task<TEntity?> Retrieve(TId id);
 
         /// <summary>
         /// Retrieves all entities.
         /// </summary>
         /// <returns>All entities.</returns>
-        Task<List<TEntity>> RetrieveAll();
+        Task<List<TEntity>?> RetrieveAll();
     }
 }

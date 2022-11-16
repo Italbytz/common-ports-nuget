@@ -13,7 +13,7 @@ namespace Italbytz.Ports.Common
         /// </summary>
         /// <param name="entity">The entity to create.</param>
         /// <returns>ID of the created entity.</returns>
-        Task<TId> Create(TEntity entity);
+        Task<TId?> Create(TEntity entity);
 
         /// <summary>
         /// Updates an entity.
