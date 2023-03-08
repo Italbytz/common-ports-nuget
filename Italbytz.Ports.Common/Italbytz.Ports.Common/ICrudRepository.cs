@@ -7,8 +7,8 @@ namespace Italbytz.Ports.Common
     /// <summary>
     /// Repository with CRUD operations.
     /// </summary>
-    public interface ICrudRepository<TId, TEntity> : IRepository<TId, TEntity>,
-        IDataSource<TId, TEntity>, IDataSink<TId, TEntity>
-    {
-    }
+    public interface ICrudRepository<TId, TEntity>
+        : IRepository<TId, TEntity>,
+            IDataSource<TId, TEntity>,
+            IDataSink<TId, TEntity> { }
 }

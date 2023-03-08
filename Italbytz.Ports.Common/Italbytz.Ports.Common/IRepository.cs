@@ -7,7 +7,5 @@ namespace Italbytz.Ports.Common
     /// <summary>
     /// A generic repository.
     /// </summary>
-    public interface IRepository<TId, TEntity>
-    {        
-    }
+    public interface IRepository<TId, TEntity> { }
 }
