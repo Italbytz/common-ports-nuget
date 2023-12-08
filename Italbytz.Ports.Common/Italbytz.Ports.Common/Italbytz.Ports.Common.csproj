@@ -17,10 +17,10 @@
 		<LangVersion>9.0</LangVersion>
 	</PropertyGroup>
 	<ItemGroup>
-	  <Compile Include="..\..\..\csharp-maui-isd-companion\csharp-maui-study-companion\StudyCompanion.Ports\IDataSource.cs">
+	  <Compile Include="..\..\csharp-maui-study-companion\StudyCompanion.Ports\IDataSource.cs">
 	    <Link>IDataSource.cs</Link>
 	  </Compile>
-	  <Compile Include="..\..\..\csharp-maui-isd-companion\csharp-maui-study-companion\StudyCompanion.Ports\IService.cs">
+	  <Compile Include="..\..\csharp-maui-study-companion\StudyCompanion.Ports\IService.cs">
 	    <Link>IService.cs</Link>
 	  </Compile>
 	</ItemGroup>
